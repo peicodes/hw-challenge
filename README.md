@@ -17,8 +17,8 @@ One of the most important things our clients want to see is the return rate of t
 ### Introduction
 
 Some basic finance definitions:  
-Cash Flow - Money going in or out of an account. Positive cash flows are deposits.  
-Annualized MWR - The 'per-year' MWR. Using this value, you can calculate the total MWR for any length of time. You can also calculate the annualized MWR if you are given the MWR for a period of time.  
+1. Cash Flow - Money going in or out of an account. Positive cash flows are deposits.  
+2. Annualized MWR - The 'per-year' MWR. Using this value, you can calculate the total MWR for any length of time. You can also calculate the annualized MWR if you are given the MWR for a period of time.  
 
 ##### Example 1
 
@@ -40,10 +40,10 @@ What if there are two cash flows? Let's say an account had the following snapsho
 
 { year: 0, cash_flow: 1000.00, market_value: 1000.00 }  
 { year: 1, cash_flow: 1500.00, market_value: 2600.00 }  
-{ year: 2, cash_flow: 0.00, market_value 2700.00 }  
-{ year: 3, cash_flow: 0.00, market_value 3000.00 }  
-{ year: 4, cash_flow: 0.00, market_value 3400.00 }  
-{ year: 5, cash_flow: 0.00, market_value 3806.66 }  
+{ year: 2, cash_flow: 0.00, market_value: 2700.00 }  
+{ year: 3, cash_flow: 0.00, market_value: 3000.00 }  
+{ year: 4, cash_flow: 0.00, market_value: 3400.00 }  
+{ year: 5, cash_flow: 0.00, market_value: 3806.66 }  
 
 At year 5, the account is worth $3806.66. The annualized MWR require to make this happen is also 10%. This is known by solving the following equation:
 
@@ -59,8 +59,8 @@ Given n snapshots, you must calculate the annualized MWR. In general, the proble
 `snapshot[0].cash_flow * (1 + x) ^ (n - 1) + snapshot[1].cash_flow * (1 + x) ^ (n - 2) + ... + snapshot[n-2].cash_flow * (1 + x) ^ 1 = snapshot[n-1].market_value`
 
 Two assumptions you can always make:  
--In the first snapshot, cash_flow = market_value  
--In the last snapshot, cash_flow = 0  
+1. In the first snapshot, cash_flow = market_value  
+2. In the last snapshot, cash_flow = 0  
 
 
 ### Requirements
