@@ -31,7 +31,7 @@ lr.on('close', function() {
     // console.log(snapshots[1][2])
 
     var x = (snapshots[1][2] - snapshots[1][1])/snapshots[0][2] - 1
-    console.log(x)
+    console.log(x*100)
 })
 
 
