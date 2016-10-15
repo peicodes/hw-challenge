@@ -37,7 +37,7 @@ def bisect(a, b, f, tol):
     else:
         return bisect(mid, b, f, tol)
 
-print bisect(1, 2, f, 1e-6) 
+print bisect(1, 2, f, 1e-6) - 1.0
 
 
 #from numpy import *
