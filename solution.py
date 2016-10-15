@@ -16,7 +16,7 @@ def f(x):  # Polynomial
 
 
 def solution():
-    current = 1.5
+    current = 1.5  # Guess for initial interest (current = 1 + x, therefore initial guess is 0.5%)
     x = 500  # Adjust to higher value for more precision
     for i in range(x):
         current = current - (f(current) / derivative(current))
