@@ -9,20 +9,21 @@ def derivative(x):  # Derivative function of polynomial
 def f(x):  # Polynomial
     ans = 0
     for i in range(n):
-        ans += cash_flow[i] * x ** (n - i - 1)
-    ans -= market_value[-1]
+        degree = n - i - 1
+        ans += cash_flow[i] * x ** degree
+    ans -= market_value[-1]  # Last market value
     return ans
 
 
 def solution():
     current = 1.5
-    x = 20  # Adjust to higher value for more precision
+    x = 500  # Adjust to higher value for more precision
     for i in range(x):
         current = current - (f(current) / derivative(current))
     return current - 1
 
 
-data = open("test.csv").readlines()
+data = open("test2.csv").readlines()
 cash_flow = []
 market_value = []
 for line in data[1:]:
