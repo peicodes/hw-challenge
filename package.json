@@ -1,0 +1,20 @@
+{
+  "name": "hw-challenge",
+  "version": "1.0.0",
+  "description": "### Background",
+  "main": "problem.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node problem.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rajjoshi22/hw-challenge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rajjoshi22/hw-challenge/issues"
+  },
+  "homepage": "https://github.com/rajjoshi22/hw-challenge#readme"
+}
